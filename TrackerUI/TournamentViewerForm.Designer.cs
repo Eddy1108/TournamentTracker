@@ -30,12 +30,12 @@
         {
             tournamentLabel = new Label();
             tournamentNameLabel = new Label();
-            label1 = new Label();
+            roundLabel = new Label();
             roundDropDown = new ComboBox();
             unplayedOnlyCheckBox = new CheckBox();
             matchupListBox = new ListBox();
             teamOneName = new Label();
-            button1 = new Button();
+            scoreButton = new Button();
             teamOneScoreLabel = new Label();
             teamOneScoreValue = new TextBox();
             teamTwoScoreValue = new TextBox();
@@ -66,16 +66,16 @@
             tournamentNameLabel.TabIndex = 1;
             tournamentNameLabel.Text = "<none>";
             // 
-            // label1
+            // roundLabel
             // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI Light", 20.25F, FontStyle.Regular, GraphicsUnit.Point);
-            label1.ForeColor = Color.FromArgb(51, 153, 255);
-            label1.Location = new Point(43, 120);
-            label1.Name = "label1";
-            label1.Size = new Size(90, 37);
-            label1.TabIndex = 2;
-            label1.Text = "Round";
+            roundLabel.AutoSize = true;
+            roundLabel.Font = new Font("Segoe UI Light", 20.25F, FontStyle.Regular, GraphicsUnit.Point);
+            roundLabel.ForeColor = Color.FromArgb(51, 153, 255);
+            roundLabel.Location = new Point(43, 120);
+            roundLabel.Name = "roundLabel";
+            roundLabel.Size = new Size(90, 37);
+            roundLabel.TabIndex = 2;
+            roundLabel.Text = "Round";
             // 
             // roundDropDown
             // 
@@ -121,20 +121,20 @@
             teamOneName.TabIndex = 6;
             teamOneName.Text = "<team one>";
             // 
-            // button1
+            // scoreButton
             // 
-            button1.FlatAppearance.BorderColor = Color.Silver;
-            button1.FlatAppearance.BorderSize = 2;
-            button1.FlatAppearance.MouseDownBackColor = Color.FromArgb(102, 102, 102);
-            button1.FlatAppearance.MouseOverBackColor = Color.FromArgb(242, 242, 242);
-            button1.Font = new Font("Segoe UI Semibold", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
-            button1.ForeColor = Color.FromArgb(51, 153, 255);
-            button1.Location = new Point(744, 350);
-            button1.Name = "button1";
-            button1.Size = new Size(128, 72);
-            button1.TabIndex = 7;
-            button1.Text = "Score";
-            button1.UseVisualStyleBackColor = true;
+            scoreButton.FlatAppearance.BorderColor = Color.Silver;
+            scoreButton.FlatAppearance.BorderSize = 2;
+            scoreButton.FlatAppearance.MouseDownBackColor = Color.FromArgb(102, 102, 102);
+            scoreButton.FlatAppearance.MouseOverBackColor = Color.FromArgb(242, 242, 242);
+            scoreButton.Font = new Font("Segoe UI Semibold", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
+            scoreButton.ForeColor = Color.FromArgb(51, 153, 255);
+            scoreButton.Location = new Point(744, 350);
+            scoreButton.Name = "scoreButton";
+            scoreButton.Size = new Size(128, 72);
+            scoreButton.TabIndex = 7;
+            scoreButton.Text = "Score";
+            scoreButton.UseVisualStyleBackColor = true;
             // 
             // teamOneScoreLabel
             // 
@@ -206,12 +206,12 @@
             Controls.Add(teamTwoNameLabel);
             Controls.Add(teamOneScoreValue);
             Controls.Add(teamOneScoreLabel);
-            Controls.Add(button1);
+            Controls.Add(scoreButton);
             Controls.Add(teamOneName);
             Controls.Add(matchupListBox);
             Controls.Add(unplayedOnlyCheckBox);
             Controls.Add(roundDropDown);
-            Controls.Add(label1);
+            Controls.Add(roundLabel);
             Controls.Add(tournamentNameLabel);
             Controls.Add(tournamentLabel);
             Font = new Font("Segoe UI Light", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
@@ -227,12 +227,12 @@
 
         private Label tournamentLabel;
         private Label tournamentNameLabel;
-        private Label label1;
+        private Label roundLabel;
         private ComboBox roundDropDown;
         private CheckBox unplayedOnlyCheckBox;
         private ListBox matchupListBox;
         private Label teamOneName;
-        private Button button1;
+        private Button scoreButton;
         private Label teamOneScoreLabel;
         private TextBox teamOneScoreValue;
         private TextBox teamTwoScoreValue;
