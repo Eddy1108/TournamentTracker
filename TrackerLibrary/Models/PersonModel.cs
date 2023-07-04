@@ -9,6 +9,11 @@ namespace TrackerLibrary.Models
     public class PersonModel
     {
         /// <summary>
+        /// The unique identifier for the person
+        /// </summary>
+        public int Id { get; set; }
+
+        /// <summary>
         /// First Name of Person
         /// </summary>
         public string FirstName { get; set; }
@@ -19,7 +24,7 @@ namespace TrackerLibrary.Models
         /// <summary>
         /// Email belonging to Person
         /// </summary>
-        public string EmailAdress { get; set; }
+        public string EmailAddress { get; set; }
         /// <summary>
         /// Cellphone number belonging to Person
         /// </summary>
