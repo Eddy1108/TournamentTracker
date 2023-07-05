@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            tournamentNameValue = new TextBox();
+            teamNameValue = new TextBox();
             teamNameLabel = new Label();
             createTeamLabel = new Label();
             addTeamMemberButton = new Button();
@@ -50,12 +50,12 @@
             addNewMemberGroupBox.SuspendLayout();
             SuspendLayout();
             // 
-            // tournamentNameValue
+            // teamNameValue
             // 
-            tournamentNameValue.Location = new Point(36, 145);
-            tournamentNameValue.Name = "tournamentNameValue";
-            tournamentNameValue.Size = new Size(426, 36);
-            tournamentNameValue.TabIndex = 14;
+            teamNameValue.Location = new Point(36, 145);
+            teamNameValue.Name = "teamNameValue";
+            teamNameValue.Size = new Size(426, 36);
+            teamNameValue.TabIndex = 14;
             // 
             // teamNameLabel
             // 
@@ -263,6 +263,7 @@
             createTeamButton.TabIndex = 26;
             createTeamButton.Text = "Create Team";
             createTeamButton.UseVisualStyleBackColor = true;
+            createTeamButton.Click += createTeamButton_Click;
             // 
             // CreateTeamForm
             // 
@@ -277,7 +278,7 @@
             Controls.Add(addTeamMemberButton);
             Controls.Add(selectTeamMemberDropDown);
             Controls.Add(selectTeamMemberLabel);
-            Controls.Add(tournamentNameValue);
+            Controls.Add(teamNameValue);
             Controls.Add(teamNameLabel);
             Controls.Add(createTeamLabel);
             Font = new Font("Segoe UI", 16F, FontStyle.Regular, GraphicsUnit.Point);
@@ -292,7 +293,7 @@
 
         #endregion
 
-        private TextBox tournamentNameValue;
+        private TextBox teamNameValue;
         private Label teamNameLabel;
         private Label createTeamLabel;
         private Button addTeamMemberButton;
