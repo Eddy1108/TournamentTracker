@@ -33,7 +33,7 @@ namespace TrackerUI
 
             tournamentTeamsListBox.DataSource = null;
             tournamentTeamsListBox.DataSource = selectedTeams;
-            tournamentTeamsListBox.DisplayMember = "FullName";
+            tournamentTeamsListBox.DisplayMember = "TeamName";
 
             prizesListBox.DataSource = null;
             prizesListBox.DataSource = selectedPrizes;
@@ -45,7 +45,7 @@ namespace TrackerUI
 
             TeamModel t = (TeamModel)selectTeamDropDown.SelectedItem;
 
-            if (t != null )
+            if (t != null)
             {
                 availableTeams.Remove(t);
                 selectedTeams.Add(t);
