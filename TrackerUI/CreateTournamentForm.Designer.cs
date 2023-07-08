@@ -125,6 +125,7 @@
             createNewTeamLink.TabIndex = 16;
             createNewTeamLink.TabStop = true;
             createNewTeamLink.Text = "create new";
+            createNewTeamLink.LinkClicked += createNewTeamLink_LinkClicked;
             // 
             // addTeamButton
             // 
@@ -156,6 +157,7 @@
             createPrizeButton.TabIndex = 18;
             createPrizeButton.Text = "Create Prize";
             createPrizeButton.UseVisualStyleBackColor = true;
+            createPrizeButton.Click += createPrizeButton_Click;
             // 
             // tournamentTeamsListBox
             // 
@@ -192,6 +194,7 @@
             RemoveSelectedPlayersButton.TabIndex = 21;
             RemoveSelectedPlayersButton.Text = "Remove Selected";
             RemoveSelectedPlayersButton.UseVisualStyleBackColor = true;
+            RemoveSelectedPlayersButton.Click += RemoveSelectedPlayersButton_Click;
             // 
             // RemoveSelectedPrizesButton
             // 
@@ -207,6 +210,7 @@
             RemoveSelectedPrizesButton.TabIndex = 24;
             RemoveSelectedPrizesButton.Text = "Remove Selected";
             RemoveSelectedPrizesButton.UseVisualStyleBackColor = true;
+            RemoveSelectedPrizesButton.Click += RemoveSelectedPrizesButton_Click;
             // 
             // prizesListLabel
             // 
