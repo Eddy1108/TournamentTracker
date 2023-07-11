@@ -84,16 +84,6 @@ namespace TrackerUI
 
         private void RemoveSelectedPlayersButton_Click(object sender, EventArgs e)
         {
-            //PersonModel p = (PersonModel)teamMembersListBox.SelectedItem;
-
-            //if (p != null)
-            //{
-            //    selectedTeamMembers.Remove(p);
-            //    availableTeamMembers.Add(p);
-
-            //    WireUpLists();
-            //}
-
             TeamModel t = (TeamModel)tournamentTeamsListBox.SelectedItem;
 
             if (t != null)
@@ -139,8 +129,9 @@ namespace TrackerUI
 
             tm.Prizes = selectedPrizes;
             tm.EnteredTeams = selectedTeams;
-            
-            //Wire our matchups
+
+            //TODO - Wire our matchups
+            TournamentLogic.CreateRounds(tm);
 
             //Create Tournament Entry
             //Create all of the prizes entries
