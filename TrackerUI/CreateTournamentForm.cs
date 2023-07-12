@@ -116,7 +116,7 @@ namespace TrackerUI
             bool feeAcceptable = decimal.TryParse(entryFeeValue.Text, out fee);
             if (!feeAcceptable)
             {
-                MessageBox.Show("Invalid Entry Fee!", "Use only numbers.", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Invalid Entry Fee!", "Use numbers only.", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
 

@@ -50,7 +50,7 @@ namespace TrackerLibrary
                 previousRound = currentRound;
 
                 currentRound = new List<MatchupModel>();
-                round++;
+                round += 1;
             }
         }
 
@@ -71,7 +71,7 @@ namespace TrackerLibrary
 
                     if (byes > 0)
                     {
-                        byes--;
+                        byes -= 1;
                     }
                 }
             }
@@ -81,7 +81,7 @@ namespace TrackerLibrary
         private static int NumberOfByes(int rounds, int numberOfTeams)
         {
             int output = 0;
-            int totalTeams = 0;
+            int totalTeams = 1;
 
             for (int i = 1; i <= rounds; i++)
             {
@@ -99,7 +99,7 @@ namespace TrackerLibrary
 
             while (val < teamCount)
             {
-                output++;
+                output += 1;
                 val *= 2;
             }
 
